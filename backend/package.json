@@ -5,13 +5,18 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node --env-file=.env app.js"
+    "dev": "nodemon --env-file=.env app.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "packageManager": "pnpm@9.14.1+sha512.7f1de9cffea40ff4594c48a94776112a0db325e81fb18a9400362ff7b7247f4fbd76c3011611c9f8ac58743c3dc526017894e07948de9b72052f874ee2edfdcd",
   "dependencies": {
-    "express": "^4.21.2"
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "nodemon": "^3.1.9",
+    "pg": "^8.13.1"
   }
 }

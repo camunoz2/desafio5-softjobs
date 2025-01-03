@@ -8,7 +8,7 @@ const initialForm = {
   email: 'docente@desafiolatam.com',
   password: '123456',
   rol: 'Seleccione un rol',
-  lenguage: 'Seleccione un Lenguage'
+  lenguaje: 'Seleccione un Lenguaje'
 }
 
 const Register = () => {
@@ -24,7 +24,7 @@ const Register = () => {
       !user.email.trim() ||
       !user.password.trim() ||
       user.rol === 'Seleccione un rol' ||
-      user.lenguage === 'Seleccione un Lenguage'
+      user.lenguaje === 'Seleccione un Lenguaje'
     ) {
       return window.alert('Todos los campos son obligatorias.')
     }
@@ -91,14 +91,14 @@ const Register = () => {
         </select>
       </div>
       <div className='form-group mt-1'>
-        <label>Lenguage</label>
+        <label>Lenguaje</label>
         <select
-          defaultValue={user.lenguage}
+          defaultValue={user.lenguaje}
           onChange={handleUser}
-          name='lenguage'
+          name='lenguaje'
           className='form-select'
         >
-          <option disabled>Seleccione un Lenguage</option>
+          <option disabled>Seleccione un Lenguaje</option>
           <option value='JavaScript'>JavaScript</option>
           <option value='Python'>Python</option>
           <option value='Ruby'>Ruby</option>
